@@ -80,17 +80,18 @@ To test Resilience4j Circuit Breaker:
 
 ---
 
-## 📁 Repository Structure
+## 📁 Directory Structure
 
-```bash
+The project is structured into the following core microservices:
+
+```tree
 TradePay/
-│
-├── product-service/   # Microservice for product operations
-├── order-service/     # Microservice for order operations
-├── payment-service/   # Microservice for payment operations
-├── service-registry/  # Service discovery component
-└── api-gateway/       # Central entry point and routing
-
+├── product-service/
+├── order-service/
+├── payment-service/
+├── service-registry/
+└── api-gateway/
+```
 ---
 
 ## ▶️ How to Run
@@ -104,16 +105,26 @@ TradePay/
    ```bash
    git clone https://github.com/Mr-AB007/TradePay.git
    cd TradePay
+   ```
 
 2. Start Service Registry:
-cd service-registry
-mvn spring-boot:run
+    ```bash
+    cd service-registry
+    mvn spring-boot:run
+    cd ../product-service && mvn spring-boot:run
+    cd ../order-service && mvn spring-boot:run
+    cd ../payment-service && mvn spring-boot:run
+    cd ../api-gateway
+    mvn spring-boot:run
+3. Check service registration at:
+   👉 http://localhost:8761
 
-
-##🌟 Features
+---
+### 🌟 Features
 
 - Fully modular and scalable microservices
 - Dynamic service discovery via Eureka
 - Fault-tolerant communication using Circuit Breaker
 - RESTful endpoints orchestrated via API Gateway
 - Simple project structure ideal for learning microservices
+---
