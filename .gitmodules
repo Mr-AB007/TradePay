@@ -10,3 +10,6 @@
 [submodule "service-registry"]
 	path = service-registry
 	url = git@github.com:Mr-AB007/service-registry.git
+[submodule "tradepay-api-gateway"]
+	path = tradepay-api-gateway
+	url = git@github.com:Mr-AB007/trade-api-gateway.git
