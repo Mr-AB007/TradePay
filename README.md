@@ -31,7 +31,6 @@ A single **API Gateway** routes requests to these services, and **Feign Clients*
 - **Resilience4j** (Circuit Breaker / Fault Tolerance)
 - **H2 / MySQL** (Databases)
 - **Maven** (Build and dependency management)
-- **Docker** (Containerization, optional)
 
 ---
 
@@ -83,14 +82,14 @@ To test Resilience4j Circuit Breaker:
 
 ## 📁 Repository Structure
 
+```bash
 TradePay/
 │
-├── product-service/
-├── order-service/
-├── payment-service/
-├── service-registry/
-└── api-gateway/
-
+├── product-service/   # Microservice for product operations
+├── order-service/     # Microservice for order operations
+├── payment-service/   # Microservice for payment operations
+├── service-registry/  # Service discovery component
+└── api-gateway/       # Central entry point and routing
 
 ---
 
@@ -99,14 +98,13 @@ TradePay/
 ### Prerequisites
 - JDK 17+
 - Maven 3.8+
-- Docker (optional)
 
 ### Steps
 1. Clone the repo:
    ```bash
    git clone https://github.com/Mr-AB007/TradePay.git
    cd TradePay
-   bash```
+
 2. Start Service Registry:
 cd service-registry
 mvn spring-boot:run
