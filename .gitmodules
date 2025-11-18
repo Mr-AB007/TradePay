@@ -7,3 +7,6 @@
 [submodule "payment-service"]
 	path = payment-service
 	url = git@github.com:Mr-AB007/paymentservice.git
+[submodule "service-registry"]
+	path = service-registry
+	url = git@github.com:Mr-AB007/service-registry.git

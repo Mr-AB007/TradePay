@@ -2,9 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/orderservice" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/paymentservice" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/productservice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/order-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/payment-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/product-service" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/service-registry" vcs="Git" />
   </component>
 </project>
