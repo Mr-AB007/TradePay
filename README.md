@@ -10,12 +10,13 @@ This project is ideal for understanding distributed systems, service discovery, 
 
 The system consists of four independently deployable microservices:
 
-| Microservice        | Responsibility                                 |
-|---------------------|-----------------------------------------------|
-| **Product Service** | Manages product catalog and inventory         |
-| **Order Service**   | Handles placement and tracking of orders      |
-| **Payment Service** | Processes payments and transaction status     |
-| **Service Registry** | Registers all services using Eureka Server    |
+| Microservice             | Responsibility                                 |
+|--------------------------|-----------------------------------------------|
+| **Product Service**      | Manages product catalog and inventory         |
+| **Order Service**        | Handles placement and tracking of orders      |
+| **Payment Service**      | Processes payments and transaction status     |
+| **Service Registry**     | Registers all services using Eureka Server    |
+| **TradePay API Gateway** | Central entry point for all services using Eureka|
 
 A single **API Gateway** routes requests to these services, and **Feign Clients** enable inter-service communication. **Resilience4j Circuit Breaker** is used to ensure fault tolerance between dependent services.
 
